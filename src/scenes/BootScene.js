@@ -1,17 +1,17 @@
 import Phaser from "phaser";
 
-export default class BootScene extends Phaser.Scene{
+export default class BootScene extends Phaser.Scene {
 
-constructor(){
+    constructor() {
+        super("BootScene");
+    }
 
-super("BootScene");
+    create() {
 
-}
+        this.cameras.main.fadeIn(600, 0, 0, 0);
 
-create(){
+        this.scene.start("PreloadScene");
 
-this.scene.start("PreloadScene");
-
-}
+    }
 
 }

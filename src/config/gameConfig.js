@@ -3,6 +3,8 @@ import Phaser from "phaser";
 import BootScene from "../scenes/BootScene.js";
 import PreloadScene from "../scenes/PreloadScene.js";
 import MainMenuScene from "../scenes/MainMenuScene.js";
+import WorldMapScene from "../scenes/WorldMapScene.js";
+import PuzzleScene from "../scenes/PuzzleScene.js";
 
 export default {
 
@@ -25,13 +27,11 @@ export default {
     },
 
     scene: [
-
-        BootScene,
-
-        PreloadScene,
-
-        MainMenuScene
-
-    ]
+    BootScene,
+    PreloadScene,
+    MainMenuScene,
+    WorldMapScene,
+    PuzzleScene
+]
 
 };
